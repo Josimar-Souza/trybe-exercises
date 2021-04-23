@@ -1,4 +1,4 @@
-let peca = "Água";
+let peca = "bispo";
 
 switch(peca.toLowerCase()){
     case "rei":
