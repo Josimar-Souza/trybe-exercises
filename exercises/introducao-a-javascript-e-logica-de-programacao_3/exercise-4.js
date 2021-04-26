@@ -1,7 +1,12 @@
-let n = 25;
+let n = 9;
 let char = "";
 let charCount = 0;
 let space = Math.floor(n / 2);
+
+if((n % 2) === 0){
+    console.log("Somente números impares");
+    return;
+};
 
 for (let linha = 1; linha < n; linha += 1){
     char = "";    
