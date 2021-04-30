@@ -33,7 +33,7 @@
     <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
     <div class="main-content">
       <div class="center-content">
-        <p>Texto padrão do nosso site</p>
+        <p id="first-paragraph">Texto padrão do nosso site</p>
         <p>-----</p>
         <p>Trybe</p>
       </div>
@@ -51,6 +51,21 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        document.getElementById('first-paragraph').innerHTML = 'Eu me vejo em um bom emprego fazendo aquilo que gosto ganhando bem! :)';
+
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+
+        document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaScript';
+
+        document.getElementById('first-paragraph').innerHTML = document.getElementById('first-paragraph').innerHTML.toUpperCase();
+
+        let pAll = document.getElementsByTagName('p');
+        for (let index = 0; index < pAll.length; index += 1) {
+            console.log(pAll[index]);
+        }
     </script>
   </body>
 </html>
