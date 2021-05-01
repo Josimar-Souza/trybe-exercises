@@ -58,10 +58,11 @@
   <body>
     <script>
         // COLOQUE SEU CÓDIGO AQUI
-            let body = document.body;
+        let body = document.body;
 
         let mainTitle = document.createElement('h1');
         mainTitle.innerHTML = 'Exercício 5.2';
+        mainTitle.className = 'title';
         body.appendChild(mainTitle);
 
         let mainDiv = document.createElement('div');
@@ -101,8 +102,18 @@
 
         for (let index = 0; index < 3; index += 1) {
             let h3 = document.createElement('h3');
+            h3.className = 'description';
             mainDiv.appendChild(h3);
-        }            
+        }
+
+        mainDiv.removeChild(leftContentDiv);
+        rightContentDiv.style.margin = 'auto';
+        centerContentDiv.parentElement.style.backgroundColor = 'green';
+
+        let ulItems = ul.children;
+        for (let index = 0; index < 2; index += 1) {
+            ul.removeChild(ulItems[ulItems.length - 1]);
+        }        
     </script>
   </body>
 </html>
