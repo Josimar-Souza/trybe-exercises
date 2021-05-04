@@ -109,6 +109,7 @@ function createDaysOfTheWeek() {
 
   function dayZoon() {
     let days = document.getElementsByClassName('day');
+    let daySelected = false;
 
     for (let day of days) {        
         day.addEventListener('mouseover', function(sourceEvent) {
@@ -117,6 +118,16 @@ function createDaysOfTheWeek() {
 
         day.addEventListener('mouseleave', function(sourceEvent) {
             sourceEvent.target.style.fontSize = '20px';
+        });
+
+        day.addEventListener('click', function() {
+            daySelected = !daySelected;
+            
+            if(daySelected) {
+                day.style.color = document.querySelector('.task-selected').style.backgroundColor;
+            } else {
+                day.style.color = 'rgb(119,119,119)';
+            };
         });
     };
   };
@@ -146,7 +157,7 @@ function createDaysOfTheWeek() {
                 task.className = 'task-selected';
             } else {
                 task.className = 'task';
-            }
+            };
         });
     };
   };
