@@ -16,12 +16,14 @@ function createDaysOfTheWeek() {
   // Escreva seu código abaixo.
 
   let buttonsContainer = document.getElementsByClassName('buttons-container');
+  let myTaskContainer = document.getElementsByClassName('my-tasks');
 
   generateMonthDays();
   generateHolidayButton('Feriados');
   generateFridayButton('Sexta-feira');
   dayZoon();
   taskCreator('Cozinhar');
+  taskSubtittle('red');
   
   function generateMonthDays() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -118,9 +120,23 @@ function createDaysOfTheWeek() {
     };
   };
 
-  function taskCreator(task) {
-    let myTaskContainer = document.getElementsByClassName('my-tasks');
+  function taskCreator(task) {    
     let taskSpan = document.createElement('span');
     taskSpan.innerHTML = task;
     myTaskContainer[0].appendChild(taskSpan);
+  };
+
+  function taskSubtittle(cor) {
+    let divSubtittle = document.createElement('div');
+    divSubtittle.className = 'task';
+    divSubtittle.style.backgroundColor = cor;
+    myTaskContainer[0].appendChild(divSubtittle);
+  };
+
+  function taskSelected() {
+    let taskDivs = document.getElementsByClassName('task');
+
+    for (let task of taskDivs) {
+        console.log(task);
+    };
   };
