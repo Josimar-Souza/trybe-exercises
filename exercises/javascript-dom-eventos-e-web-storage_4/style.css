@@ -13,5 +13,21 @@ body {
     text-align: justify;
     max-width: 70%;
     margin-left: 15%;
-    font-family: fantasy sans-serif;
+    font-family: fantasy sans-serif;    
+}
+
+.input-section {    
+    max-width: 160px;    
+    float: left;
+    background-color: rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.input {
+    text-align: center;
+    width: 155px;
+    height: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
