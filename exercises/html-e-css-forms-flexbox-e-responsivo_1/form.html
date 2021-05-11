@@ -4,6 +4,7 @@
     <meta charset="UTF-8">    
     <title>Currículo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -27,6 +28,14 @@
             <div class="dados-pessoais-linha">
                 <label for="input-endereco">Endereço</label>
                 <input type="text" name="endereco" id="input-endereco" placeholder="Digite o seu endereço" maxlength="200" required>
+            </div>
+            <div class="dados-pessoais-linha">
+                <label for="input-cidade">Cidade</label>
+                <input type="text" name="cidade" id="input-cidade" placeholder="Digite a sua cidade" maxlength="28" required>
+            </div>
+            <div class="dados-pessoais-linha">
+                <label for="input-estado">Estado</label>
+                <select name="estado" id="input-estado"></select required>
             </div>
         </fieldset>
     </form>
