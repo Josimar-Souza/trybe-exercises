@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">    
-    <title>Formulário</title>
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <h1>Currículo</h1>
     </header>
-    <form action="" method="get">
+    <form action="" method="get" class="form">
         <fieldset class="dados-pessoais">
             <legend>Dados Pessoais</legend>
             <div class="dados-pessoais-linha">
@@ -16,9 +17,17 @@
                 <input type="text" name="name" id="input-name" placeholder="Nome completo" maxlength="40" required>
             </div>
             <div class="dados-pessoais-linha">
-                <label for="input-name">E-mail</label>
-                <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail">
-            </div> 
+                <label for="input-email">E-mail</label>
+                <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" maxlength="50" required>
+            </div>
+            <div class="dados-pessoais-linha">
+                <label for="input-cpf">CPF</label>
+                <input type="text" name="cpf" id="input-cpf" placeholder="Digite o seu cpf" maxlength="11" required>
+            </div>
+            <div class="dados-pessoais-linha">
+                <label for="input-endereco">Endereço</label>
+                <input type="text" name="endereco" id="input-endereco" placeholder="Digite o seu endereço" maxlength="200" required>
+            </div>
         </fieldset>
     </form>
 </body>
