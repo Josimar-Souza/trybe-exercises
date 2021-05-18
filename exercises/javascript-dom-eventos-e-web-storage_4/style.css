@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+}
+
+#tittle {
+    font-size: 60px;
+    font-family: monospace sans-serif;
+    font-style: italic;
+}
+
+.article-class p {
+    text-align: justify;
+    max-width: 70%;
+    margin-left: 15%;
+    font-family: fantasy sans-serif;    
+}
+
+.input-section {    
+    max-width: 160px;    
+    float: left;
+    background-color: rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.input {
+    text-align: center;
+    width: 155px;
+    height: 15px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.input-title {
+    margin: 0px;
+    font-size: 14px;
+}
