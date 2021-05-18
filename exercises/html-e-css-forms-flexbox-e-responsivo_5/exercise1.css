@@ -1,11 +1,56 @@
-body {
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 20px;
+        margin: 20px;
+    }
 
+    h1 {
+        font-size: 30px;
+    }
+
+    figure {
+        padding: 20px;
+    }
 }
-h1 {
 
+@media screen and (min-width: 800px) {
+    body {
+        background-color: aqua;
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .img-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .columm-1 {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .columm-1 figure {
+        margin-bottom: 20px;
+    }
+
+    .columm-2 {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .columm-2 figure {
+        margin-bottom: 20px;
+    }
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
 }
 h2 {
-
+    font-size: 25px;
 }
 
 img {
