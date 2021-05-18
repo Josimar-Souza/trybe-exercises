@@ -1,5 +1,6 @@
 @media screen and (max-width: 375px) {
     body {
+        background-color: azure;
         font-size: 20px;
         margin: 20px;
     }
@@ -42,6 +43,19 @@
 
     .columm-2 figure {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        background-color: burlywood;
+        font-size: 20px;
+        margin: 35px auto;
+        max-width: 950px;
+    }
+
+    h1 {
+        text-align: center;
     }
 }
 
