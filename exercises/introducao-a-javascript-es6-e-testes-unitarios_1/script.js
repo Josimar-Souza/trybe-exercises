@@ -44,4 +44,21 @@ const testingScope = escopo => {
       return word;
   }
 
-  console.log(longestWord(`Antônio foi no banheiro e não sabemos o que aconteceu`));
+  console.log(longestWord(`Antônio foi no banheiro e não sabemos o que aconteceu`));  
+
+  const changeChar = (valueToChange, newValue, originalString) => {
+    let newString = '';
+    for (let index = 0; index < originalString.length; index += 1) {
+        if (originalString[index] === valueToChange) {            
+            newString += newValue;
+        } else {            
+            newString += originalString[index];
+        }
+    }
+    return newString;
+  }  
+
+  const skills = ['JavaScript', 'CSS', 'HTML', 'GIT', 'GITHUB'];
+  const concArrayWithString = (array, string) => `${array.join(' ')} ${string}`
+
+  console.log(concArrayWithString(skills, changeChar('x', 'Bebeto', 'Tryber x aqui!')));
