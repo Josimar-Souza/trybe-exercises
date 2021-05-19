@@ -29,3 +29,19 @@ const testingScope = escopo => {
   }
 
   console.log(calcFatorial(4));
+
+  const longestWord = phrase => {
+      const wordArray = phrase.split(' ');
+      let wordLength = 0;
+      let word = '';
+      for (let index = 0; index < wordArray.length; index += 1) {
+        if (wordArray[index].length > wordLength) {
+            wordLength = wordArray[index].length;
+            word = wordArray[index];
+        }
+      }
+
+      return word;
+  }
+
+  console.log(longestWord(`Antônio foi no banheiro e não sabemos o que aconteceu`));
