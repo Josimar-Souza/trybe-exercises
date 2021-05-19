@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Currículo</h1>
+    </header>
+    <form action="" method="get" class="form">
+        <fieldset class="dados-pessoais">
+            <legend>Dados Pessoais</legend>
+            <div class="linha">
+                <label for="input-name">Nome</label>
+                <input type="text" name="name" id="input-name" placeholder="Nome completo" maxlength="40" required>
+            </div>
+            <div class="linha">
+                <label for="input-email">E-mail</label>
+                <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" maxlength="50" required>
+            </div>
+            <div class="linha">
+                <label for="input-cpf">CPF</label>
+                <input type="text" name="cpf" id="input-cpf" placeholder="Digite o seu cpf" maxlength="11" required>
+            </div>
+            <div class="linha">
+                <label for="input-endereco">Endereço</label>
+                <input type="text" name="endereco" id="input-endereco" placeholder="Digite o seu endereço" maxlength="200" required>
+            </div>
+            <div class="linha">
+                <label for="input-cidade">Cidade</label>
+                <input type="text" name="cidade" id="input-cidade" placeholder="Digite a sua cidade" maxlength="28" required>
+            </div>
+            <div class="linha">
+                <label for="input-estado">Estado</label>
+                <select name="estado" id="input-estado"></select required>
+            </div>
+            <div class="linha">
+                <label for="input-casa">Casa</label>
+                <input type="radio" name="moradia" id="input-casa" value="casa" checked>
+                <label for="input-apartamento">Apartamento</label>
+                <input type="radio" name="moradia" id="input-apartamento" value="apartamento">
+            </div>
+        </fieldset>
+        <fieldset class="ultimo-emprego">
+            <legend>Último Emprego</legend>
+            <div class="linha">
+                <label for="resumo-curriculo">Resumo do currículo</label>
+                <br>
+                <textarea name="resumoCurriculo" id="resumo-curriculo" cols="30" rows="10" placeholder="Faça um resumo do seu currículo" maxlength="1000" required></textarea>
+            </div>
+            <div class="linha">
+                <label for="input-cargo">Cargo</label>                
+                <input type="text" name="cargo" id="input-cargo" maxlength="40" required>
+            </div>
+            <div class="linha">
+                <label for="descricao-cargo">Descrição do cargo</label>                
+                <input type="text" name="descricaoCargo" id="descricao-cargo" maxlength="500" required>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
