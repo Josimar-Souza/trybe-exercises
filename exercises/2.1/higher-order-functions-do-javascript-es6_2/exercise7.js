@@ -66,7 +66,7 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  // escreva seu código aqui    
+  // escreva seu código aqui
   const bool = books.every((book) => {
     let bool1 = true;
     for (let index = 0; index < books.length; index += 1) {
@@ -78,7 +78,6 @@ function authorUnique() {
     }
     return bool1;
   })
-  console.log(bool);
   return bool;
 }
 
