@@ -1,5 +1,5 @@
 const { describe, it, expect } = require('@jest/globals')
-const { uppercase } = require('./script')
+const { uppercase } = require('../scripts/exercise1')
 
 describe('Testes da função uppercase', () => {
   it('Testa se a variavel uppercase é uma função', () => {
